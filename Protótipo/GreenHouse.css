@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Sarala', sans-serif;
+    background-color: white;
+}
+
+.container {
+    color: #5ecd32;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemLogo {
+    height: 60px;
+    margin-left: 110px;
+    margin-top: 17px;
+}
+
+.header h1 {
+    margin-right: 200px;
+}
+
+.container ul {
+    color: #5ecd32;
+    display: flex;
+    width: 600px;
+    justify-content: space-around ;
+    list-style: none;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.container ul a {
+    text-decoration: none;
+    color: #5ecd32;
+}
+
+
+.agora {
+    font-weight: 700;
+}
+
+.banner {
+    background-image: url("https://www.datocms-assets.com/48825/1622731345-headerabforgrenhouse.jpg?auto=format&w=1920");
+    height: 573px;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.banner .container {
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+    width: 640px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 50px;
+    margin-left: 350px;
+    background-color: rgba(33, 61, 13, 0.604);
+    font-family: Righteous, cursive;
+    position: relative;
+}
+
+.banner span {
+    font-weight: bold;
+    color: rgb(101, 219, 54);
+}
