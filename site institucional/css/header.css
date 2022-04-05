@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Sarala', sans-serif;
+    background-color: white;
+}
+
+.container {
+    color: #5ecd32;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemLogo {
+    height: 60px;
+    margin-left: 110px;
+    margin-top: 17px;
+}
+
+.header h1 {
+    margin-right: 200px;
+}
+
+.container ul {
+    display: flex;
+    width: 600px;
+    justify-content: space-around ;
+    list-style: none;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.container ul a {
+    text-decoration: none;
+    color: #14c005;
+}
+
+/* .btn{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f0ffff;
+    background: #32cd4c;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px #00000052;
+    padding: 5px 5px;
+} */
+
+/* .btn:hover{
+    background-color: #5be754c7;
+    color: #2b2b2b;
+    
+}
+
+.btnlogin{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f0ffff;
+    background: #32cd4c;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px #00000052;
+    padding: 5px 5px;
+} */

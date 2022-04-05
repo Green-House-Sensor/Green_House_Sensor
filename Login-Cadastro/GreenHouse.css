@@ -167,6 +167,7 @@ ul a{
     box-shadow: 0px 10px 40px -12px #15ff00;
     transition-duration: 0.4s;
 }
+
 button:hover{
     background-color: #5be754c7;
     color: #2b2b2b;

@@ -1,0 +1,226 @@
+
+.faq h1 {
+  color: white;
+  margin-left: 150px;
+}
+
+.faq p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+
+}
+
+.fundo {
+  background-color: rgba(0, 128, 0, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo:hover {
+  transform: scale(1.05)
+}
+
+.faq1 h1 {
+  color: white;
+  margin-left: 150px;
+}
+
+.faq1 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo1 {
+  background-color: rgba(8, 146, 8, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo1:hover {
+  transform: scale(1.05)
+}
+
+.faq2 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq2 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo2 {
+  background-color: rgba(13, 162, 13, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+}
+
+.fundo2:hover {
+  transform: scale(1.05)
+}
+
+.faq3 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq3 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo3 {
+  background-color: rgba(20, 169, 20, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo3:hover {
+  transform: scale(1.05)
+}
+
+
+
+.faq4 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq4 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo4 {
+  background-color: rgba(21, 186, 21, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo4:hover {
+  transform: scale(1.05)
+}
+
+.faq5 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq5 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo5 {
+  background-color: rgba(41, 202, 41, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo5:hover {
+  transform: scale(1.05)
+}
+
+.faq6 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq6 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo6 {
+  background-color: rgba(40, 204, 40, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo6:hover {
+  transform: scale(1.05)
+}
+
+.faq7 h1 {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq7 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo7 {
+  background-color: rgba(50, 214, 50, 0.999);
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+
+}
+
+.fundo7:hover {
+  transform: scale(1.05)
+}
