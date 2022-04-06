@@ -1,5 +1,5 @@
 
-.faq h1 {
+.faq summary{
   color: white;
   margin-left: 150px;
 }
@@ -28,7 +28,7 @@
   transform: scale(1.05)
 }
 
-.faq1 h1 {
+.faq1 summary {
   color: white;
   margin-left: 150px;
 }
@@ -55,7 +55,7 @@
   transform: scale(1.05)
 }
 
-.faq2 h1 {
+.faq2 summary {
   color: white;
   margin-left: 150px;
 
@@ -82,7 +82,7 @@
   transform: scale(1.05)
 }
 
-.faq3 h1 {
+.faq3 summary {
   color: white;
   margin-left: 150px;
 
@@ -112,7 +112,7 @@
 
 
 
-.faq4 h1 {
+.faq4 summary {
   color: white;
   margin-left: 150px;
 
@@ -140,7 +140,7 @@
   transform: scale(1.05)
 }
 
-.faq5 h1 {
+.faq5 summary {
   color: white;
   margin-left: 150px;
 
@@ -168,7 +168,7 @@
   transform: scale(1.05)
 }
 
-.faq6 h1 {
+.faq6 summary {
   color: white;
   margin-left: 150px;
 
@@ -196,7 +196,7 @@
   transform: scale(1.05)
 }
 
-.faq7 h1 {
+.faq7 summary {
   color: white;
   margin-left: 150px;
 
@@ -223,4 +223,13 @@
 
 .fundo7:hover {
   transform: scale(1.05)
+}
+
+.btn a{
+  color: white;
+}
+
+details summary {
+  list-style: disc
+  
 }

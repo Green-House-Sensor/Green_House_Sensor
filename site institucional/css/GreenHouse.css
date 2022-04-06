@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .left-login{
     width: 50vw;
@@ -89,4 +91,9 @@
 .tamanho{
     width: 400px;
 }
+
+.fonteinput {
+    font-family: Arial, Helvetica, sans-serif
+}
+
 

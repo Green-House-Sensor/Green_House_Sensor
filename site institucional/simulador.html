@@ -19,7 +19,7 @@
 
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li class="btn"><a href="#">Simulador</a></li>
+                <li class="agora"><a href="#"> <span> Simulador </span></a></li>
                 <li><a href="sobreproduto.html">Nossos Serviços</a></li>
                 <li><a href="sobrenos.html">Sobre nós</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
@@ -79,8 +79,8 @@
             div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então será necessário <b>${qtdSensor} sensor</b>, e o custo do sistema será de <b>R$ ${preco1.toFixed(2)}</b>.`
         }
         else if(m2>125 && m2<=250){
-            preco3 = (preco*0.8)*qtdSensor;
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco3.toFixed(2)}</b>.`
+            preco2 = (preco*0.9)*qtdSensor;
+            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco2.toFixed(2)}</b>.`
         }
         else if(m2>250 && m2<=375){
             preco3 = (preco*0.8)*qtdSensor;
