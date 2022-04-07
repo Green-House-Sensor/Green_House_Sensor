@@ -21,7 +21,7 @@
    padding: 30px 35px;
    background: #ffffff;
    border-radius: 20px;
-   box-shadow: 0px 10px 50px #00000056;
+   box-shadow: 0px 10px 25px #00000056;
    width: 400px;
 }
 
@@ -33,7 +33,7 @@
    background: #f0ffff94;
    color: #2b2b2b;
    font-size: 12pt;
-   box-shadow: 0px 10px 40px #00000056;
+   box-shadow: 0px 10px 25px #00000056;
    box-sizing: border-box;
 }
 

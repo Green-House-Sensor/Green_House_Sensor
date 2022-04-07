@@ -13,14 +13,14 @@
 }
 
 .fundo {
-  background-color: rgba(0, 128, 0, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 50px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -41,13 +41,13 @@
 }
 
 .fundo1 {
-  background-color: rgba(8, 146, 8, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -69,13 +69,13 @@
 }
 
 .fundo2 {
-  background-color: rgba(13, 162, 13, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 }
 
 .fundo2:hover {
@@ -96,13 +96,13 @@
 }
 
 .fundo3 {
-  background-color: rgba(20, 169, 20, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -126,13 +126,13 @@
 }
 
 .fundo4 {
-  background-color: rgba(21, 186, 21, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -154,13 +154,13 @@
 }
 
 .fundo5 {
-  background-color: rgba(41, 202, 41, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  bbox-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -182,13 +182,13 @@
 }
 
 .fundo6 {
-  background-color: rgba(40, 204, 40, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -210,14 +210,14 @@
 }
 
 .fundo7 {
-  background-color: rgba(50, 214, 50, 0.999);
+  background-color: #32cd4c;
   display: flex;
   background-size: cover;
   border-radius: 40px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
-  box-shadow: 0px 10px 50px rgb(44, 39, 39);
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
 
 }
 
@@ -233,3 +233,22 @@ details summary {
   list-style: disc
   
 }
+
+
+/* Alexandre */
+
+.segundo-container {
+width: 100vw;
+height: 200px;
+display: flex;
+justify-items: center;
+align-items: center;
+justify-content: center;
+
+}
+
+.background {
+  background-color: #f0ffff94;
+}
+
+
