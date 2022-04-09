@@ -1,0 +1,155 @@
+.containercorpo {
+    display: flex;
+    background-image: url(imagemprincipal.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+}
+.glass {
+    height: 18%;
+    width: 100%;
+    max-width: 800px;
+    background-color: #0000005f;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 10px;
+    align-content: center;
+    
+}
+
+.containercorpo .glass p {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    align-items: center;
+    margin: 0;
+
+}
+
+.containercorpo2 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+
+
+}
+
+.containercorpo2 .frase{
+    margin-left: 50px;
+    font-size: 57px;
+    font-weight: 800;
+    text-transform: none;
+    line-height: 1.1em;
+    letter-spacing: -2px;
+    color: #32cd4c;
+    padding: 20px;
+
+}
+.containercorpo3 {
+    background-color: #32cd4c;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+
+.containercorpo3 p {
+    margin-left: 500px;
+    font-size: 57px;
+    font-weight: 800;
+    text-transform: none;
+    line-height: 1.1em;
+    letter-spacing: -2px;
+    color: #ffffff;
+    padding: 50px;
+}
+
+
+.main-container {
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  /* TITULO */
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .heading__title {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    max-height: 400px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(82, 82, 82, 0.9);
+    transition: all 0.3s;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.9);
+    transform: scale(1.08);
+    
+  }
+  
+
+  
+  .card_titulo {
+    grid-row: 2/3;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .card_desc {
+
+    font-weight: 500;
+    color: #000000;
+    grid-row: 3/4;
+    font-size: 20px;
+    
+  }
+  
+  
+  /* BACKGROUND DOS CARDS */
+  
+  .card-1 {
+    background: radial-gradient(#ffffff, #ffffff);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#ffffff, #ffffff);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#ffffff, #ffffff);
+  }
+  
+
+/* RODAPÉ */
+
+
