@@ -1,0 +1,254 @@
+
+.faq summary{
+  color: white;
+  margin-left: 150px;
+}
+
+.faq p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+
+}
+
+.fundo {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo:hover {
+  transform: scale(1.05)
+}
+
+.faq1 summary {
+  color: white;
+  margin-left: 150px;
+}
+
+.faq1 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo1 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo1:hover {
+  transform: scale(1.05)
+}
+
+.faq2 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq2 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo2 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+}
+
+.fundo2:hover {
+  transform: scale(1.05)
+}
+
+.faq3 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq3 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo3 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo3:hover {
+  transform: scale(1.05)
+}
+
+
+
+.faq4 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq4 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo4 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo4:hover {
+  transform: scale(1.05)
+}
+
+.faq5 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq5 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo5 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  bbox-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo5:hover {
+  transform: scale(1.05)
+}
+
+.faq6 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq6 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo6 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo6:hover {
+  transform: scale(1.05)
+}
+
+.faq7 summary {
+  color: white;
+  margin-left: 150px;
+
+}
+
+.faq7 p {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+.fundo7 {
+  background-color: #32cd4c;
+  display: flex;
+  background-size: cover;
+  border-radius: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+
+}
+
+.fundo7:hover {
+  transform: scale(1.05)
+}
+
+.btn a{
+  color: white;
+}
+
+details summary {
+  list-style: disc
+  
+}
+
+
+/* Alexandre */
+
+.segundo-container {
+width: 100vw;
+height: 200px;
+display: flex;
+justify-items: center;
+align-items: center;
+justify-content: center;
+
+}
+
+.background {
+  background-color: #f0ffff94;
+}
+
+
