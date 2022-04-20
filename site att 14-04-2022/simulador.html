@@ -31,12 +31,19 @@
     </div>
     <div class="simulador">
         <div class="exibir">
-            <h1>Simulador financeiro</h1>            
-            Largura da estufa (m):             
-             <input id="ipt_largura" placeholder="Digite a largura">      <br> <br>      
-            Comprimento da estufa (m): <input id="ipt_comprimento" placeholder="Digite o  comprimento">           
+            <h1>Simulador financeiro</h1>
+            Faturamento anual:
+            <input id="ipt_faturamento" placeholder="Digite seu faturamento anual" >
+            <br><br>
+            Número de funcionários:
+            <input id="ipt_funcionario" placeholder="Digite o número de funcionários">
+            <br><br>
+            Largura da estufa (m):
+            <input id="ipt_largura" placeholder="Digite a largura">
+            <br> <br>
+            Comprimento da estufa (m): <input id="ipt_comprimento" placeholder="Digite o  comprimento">
             <button onclick="simular()">Simulador</button>
-             <div id="div_resposta"></div>
+            <div id="div_resposta"></div>
         </div>
     </div>
 
@@ -46,56 +53,121 @@
 </html>
 
 <script>
-
-    function reset(){
+    function reset() {
+        ipt_faturamento.classList.remove("placeholderred")
+        ipt_faturamento.style = `border: 2px solid none;`
+        ipt_funcionario.classList.remove("placeholderred")
+        ipt_funcionario.style = `border: 2px solid none;`
         ipt_comprimento.classList.remove("placeholderred")
         ipt_comprimento.style = `border: 2px solid none;`
         ipt_largura.classList.remove("placeholderred")
         ipt_largura.style = `border: 2px solid none;`
         div_resposta.innerHTML = ``
     }
-    function simular(){
+    function simular() {
+        var anual = Number(ipt_faturamento.value);
         var larg = Number(ipt_largura.value);
         var comp = Number(ipt_comprimento.value);
-        var m2 = larg*comp;
+        var funcio = Number(ipt_funcionario.value);
+        var m2 = larg * comp;
         var sensor = 125;
         var preco = 2500;
-        var qtdSensor = m2/sensor;
+        var qtdSensor = m2 / sensor;
         qtdSensor = Math.ceil(qtdSensor);
+        var reduz = funcio/2;
+        reduz = Math.ceil(reduz);
         reset()
-        if(larg==``){
+        if (funcio == ``) {
+            div_resposta.innerHTML = `Digite o valor da largura.`
+            ipt_funcionario.placeholder = `Campo obrigatório.`
+            ipt_funcionario.style = `border: 2px solid red;`
+            ipt_funcionario.classList.add("placeholderred")
+        }
+        if (anual == ``) {
+            div_resposta.innerHTML = `Digite o valor da largura.`
+            ipt_faturamento.placeholder = `Campo obrigatório.`
+            ipt_faturamento.style = `border: 2px solid red;`
+            ipt_faturamento.classList.add("placeholderred")
+        }
+        if (larg == ``) {
             div_resposta.innerHTML = `Digite o valor da largura.`
             ipt_largura.placeholder = `Campo obrigatório.`
             ipt_largura.style = `border: 2px solid red;`
             ipt_largura.classList.add("placeholderred")
         }
-        if(comp==``){
+        if (comp == ``) {
             div_resposta.innerHTML += `<br>Digite o valor do comprimento.`
             ipt_comprimento.placeholder = `Campo obrigatório.`
             ipt_comprimento.style = `border: 2px solid red;`
             ipt_comprimento.classList.add("placeholderred")
         }
-        else if(m2<=125 && m2>0){
-            preco1 = preco;
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então será necessário <b>${qtdSensor} sensor</b>, e o custo do sistema será de <b>R$ ${preco1.toFixed(2)}</b>.`
+        else if (m2 <= 125 && m2 > 0) {
+            if (larg > 0 && larg > 10) {
+                preco1 = preco;
+                anual1 = anual-preco1
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual1.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco1.toFixed(2)}</b>.`
+            }
+            else {
+                preco1 = preco;
+                anual1 = anual-preco1;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco.toFixed(2)}</b>.`
+            }
         }
-        else if(m2>125 && m2<=250){
-            preco2 = (preco*0.9)*qtdSensor;
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco2.toFixed(2)}</b>.`
+        else if (m2 > 125 && m2 <= 250) {
+            preco2 = (preco * 0.9) * qtdSensor;
+            anual2 = anual-preco2;
+            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual2.toFixed(2)}</b>. <br>
+            A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco2.toFixed(2)}</b>.`
         }
-        else if(m2>250 && m2<=375){
-            preco3 = (preco*0.8)*qtdSensor;
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco3.toFixed(2)}</b>.`
+        else if (m2 > 250 && m2 <= 375) {
+            preco3 = (preco * 0.8) * qtdSensor;
+            anual3 = anual-preco3;
+            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual3.toFixed(2)}</b>. <br>
+            A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco3.toFixed(2)}</b>.`
         }
-        else if(m2>375 && m2<=500){
-            preco4 = (preco*0.7)*qtdSensor;
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco4.toFixed(2)}</b>.`
+        else if (m2 > 375 && m2 <= 500) {
+            if (larg > 10 && larg<=20) {
+                preco4 = (preco * 0.7) * qtdSensor;
+                anual4 = anual-preco4;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*2} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
+            }
+            if(larg>20){
+                preco4 = (preco * 0.7) * qtdSensor;
+                anual4 = anual-preco4;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*3} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
+            }
+            else {
+                preco4 = (preco * 0.7) * qtdSensor;
+                anual4 = anual-preco4;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
+            }
         }
-        else if(m2>500){
-            preco5 = (preco*0.65);
-            div_resposta.innerHTML = `Sua área da estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} sensores</b>, e o custo do sistema será de <b>R$ ${preco5.toFixed(2)}</b>.`     
+        else if (m2 > 500) {          
+            if (larg > 10 && larg<=20) {
+                preco5 = (preco * 0.65) * qtdSensor;
+                anual5 = anual-preco5;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*2} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
+            }
+            if(larg>20){
+                preco5 = (preco * 0.65) * qtdSensor;
+                anual5 = anual-preco5;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*3} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
+            }
+            else {
+                preco5 = (preco * 0.65);
+                anual5 = anual-preco5;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
+            }
         }
-        
+
     }
 
 </script>

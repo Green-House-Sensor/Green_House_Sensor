@@ -1,27 +1,30 @@
-
+/* .segundo-container{
+background-color: 
+;
+} */
 .faq summary{
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 }
-
 .faq p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
-
+  display: flex;
 }
 
 .fundo {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 50px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo:hover {
@@ -29,26 +32,27 @@
 }
 
 .faq1 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 }
 
 .faq1 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo1 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo1:hover {
@@ -56,7 +60,7 @@
 }
 
 .faq2 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -64,18 +68,20 @@
 .faq2 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo2 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
+  cursor: pointer;
 }
 
 .fundo2:hover {
@@ -83,7 +89,7 @@
 }
 
 .faq3 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -91,19 +97,20 @@
 .faq3 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo3 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo3:hover {
@@ -113,7 +120,7 @@
 
 
 .faq4 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -121,19 +128,20 @@
 .faq4 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo4 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo4:hover {
@@ -141,7 +149,7 @@
 }
 
 .faq5 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -149,19 +157,20 @@
 .faq5 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo5 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
-  bbox-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  box-shadow: 0px 10px 20px rgb(107, 104, 104);
+  cursor: pointer;
 }
 
 .fundo5:hover {
@@ -169,7 +178,7 @@
 }
 
 .faq6 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -177,19 +186,20 @@
 .faq6 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo6 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo6:hover {
@@ -197,7 +207,7 @@
 }
 
 .faq7 summary {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 150px;
 
 }
@@ -205,20 +215,21 @@
 .faq7 p {
   margin-left: 150px;
   margin-right: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
 .fundo7 {
-  background-color: #32cd4c;
+  background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border-radius: 40px;
+  border: solid black 2px;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
   box-shadow: 0px 10px 20px rgb(107, 104, 104);
-
+  cursor: pointer;
 }
 
 .fundo7:hover {
@@ -250,5 +261,3 @@ justify-content: center;
 .background {
   background-color: #f0ffff94;
 }
-
-
