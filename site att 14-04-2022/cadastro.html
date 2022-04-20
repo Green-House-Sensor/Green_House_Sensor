@@ -38,12 +38,32 @@
         <div class="right-login">
             <div class="card">
                 <div class="tamanho">
-                    <h3>Nome completo: </h3>
+                    <h3>Nome completo/Razão social: </h3>
                     <input placeholder="Insira seu nome completo">
                 </div>
                 <div class="tamanho">
                     <h3>Data de nascimento: </h3>
                     <input class="fonteinput" placeholder="Insira sua data de nascimento" type="date">
+                </div>
+                <div class="tamanho">
+                    <h3>Tipo: </h3>
+                    <select class="cssselect" name="tipo" id="select_tipo" onchange="mostrar()">
+                        <option value="0">Selecione</option>
+                        <option value="1">CPF</option>
+                        <option value="2">CNPJ</option>
+                    </select>
+                </div>
+                <div class="tamanho" id="divescolha" style="display: none;">
+                    <h3>CPF / CNPJ: </h3>
+                    <input class="fonteinput" placeholder="Insira seu CPF ou CNPJ">
+                </div>
+                <div class="tamanho">
+                    <h3>CEP: </h3>
+                    <input class="fonteinput" placeholder="Insira seu CEP">
+                </div>
+                <div class="tamanho">
+                    <h3>Número: </h3>
+                    <input class="fonteinput" placeholder="Insira o número do endereço">
                 </div>
                 <div class="tamanho">
                     <h3>Email:</h3>
@@ -65,6 +85,17 @@
 </html>
 <script>
     
+function mostrar() {
+    var tipo = select_tipo.value
+
+    if (tipo == 1 ) {
+        divescolha.style.display = "block"
+    } 
+    else {
+        divescolha.style.display = "block"
+    }
+}
+
 </script>
 
 <!-- <li><a href="login.html"><button class="btnlogin" onclick="Login">Login</button></a></li> -->
