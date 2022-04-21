@@ -104,66 +104,66 @@
         else if (m2 <= 125 && m2 > 0) {
             if (larg > 0 && larg > 10) {
                 preco1 = preco;
-                anual1 = anual-preco1
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual1.toFixed(2)}</b>. <br>
+                anual1 = anual * 1.30
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual1.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco1.toFixed(2)}</b>.`
             }
             else {
                 preco1 = preco;
-                anual1 = anual-preco1;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual.toFixed(2)}</b>. <br>
+                anual1 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco.toFixed(2)}</b>.`
             }
         }
         else if (m2 > 125 && m2 <= 250) {
             preco2 = (preco * 0.9) * qtdSensor;
-            anual2 = anual-preco2;
-            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual2.toFixed(2)}</b>. <br>
+            anual2 = anual * 1.30;
+            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual2.toFixed(2)}</b>. <br>
             A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco2.toFixed(2)}</b>.`
         }
         else if (m2 > 250 && m2 <= 375) {
             preco3 = (preco * 0.8) * qtdSensor;
-            anual3 = anual-preco3;
-            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual3.toFixed(2)}</b>. <br>
+            anual3 = anual * 1.30;
+            div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual3.toFixed(2)}</b>. <br>
             A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco3.toFixed(2)}</b>.`
         }
         else if (m2 > 375 && m2 <= 500) {
             if (larg > 10 && larg<=20) {
                 preco4 = (preco * 0.7) * qtdSensor;
-                anual4 = anual-preco4;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                anual4 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual4.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*2} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
             }
             if(larg>20){
                 preco4 = (preco * 0.7) * qtdSensor;
-                anual4 = anual-preco4;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                anual4 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual4.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*3} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
             }
             else {
                 preco4 = (preco * 0.7) * qtdSensor;
-                anual4 = anual-preco4;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual4.toFixed(2)}</b>. <br>
+                anual4 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual4.toFixed(2)}</b>. <br>
                  A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco4.toFixed(2)}</b>.`
             }
         }
         else if (m2 > 500) {          
             if (larg > 10 && larg<=20) {
                 preco5 = (preco * 0.65) * qtdSensor;
-                anual5 = anual-preco5;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                anual5 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual5.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*2} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
             }
             if(larg>20){
                 preco5 = (preco * 0.65) * qtdSensor;
-                anual5 = anual-preco5;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                anual5 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual5.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor*3} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
             }
             else {
                 preco5 = (preco * 0.65);
-                anual5 = anual-preco5;
-                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita líquida de <b>R$ ${anual5.toFixed(2)}</b>. <br>
+                anual5 = anual * 1.30;
+                div_resposta.innerHTML = `Utilizando nosso sistema é possível reduzir o número de funcionários para <b>${reduz}</b> e obter uma receita bruta de <b>R$ ${anual5.toFixed(2)}</b>. <br>
                 A área da sua estufa é de <b>${m2} m²</b>, então serão necessários <b>${qtdSensor} kit(s) de sensor(es)</b>, com um custo total de <b>R$ ${preco5.toFixed(2)}</b>.`
             }
         }
