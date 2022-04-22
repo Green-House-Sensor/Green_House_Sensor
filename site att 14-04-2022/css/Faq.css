@@ -64,7 +64,7 @@
 .faq2 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq2 p {
@@ -93,7 +93,7 @@
 .faq3 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq3 p {
@@ -124,7 +124,7 @@
 .faq4 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq4 p {
@@ -153,7 +153,7 @@
 .faq5 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq5 p {
@@ -182,7 +182,7 @@
 .faq6 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq6 p {
@@ -211,7 +211,7 @@
 .faq7 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq7 p {
