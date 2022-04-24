@@ -1,10 +1,8 @@
-/* .segundo-container{
-background-color: 
-;
-} */
 .faq summary{
   color: rgb(0, 0, 0);
   margin-left: 150px;
+  display: flex;
+  width: 100%;
 }
 .faq p {
   margin-left: 150px;
@@ -18,7 +16,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -34,6 +32,8 @@ background-color:
 .faq1 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
+  display: flex;
+  
 }
 
 .faq1 p {
@@ -41,13 +41,14 @@ background-color:
   margin-right: 150px;
   color: rgb(0, 0, 0);
   font-size: 20px;
+ 
 }
 
 .fundo1 {
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -62,7 +63,7 @@ background-color:
 .faq2 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq2 p {
@@ -76,7 +77,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -91,7 +92,7 @@ background-color:
 .faq3 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq3 p {
@@ -105,7 +106,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -122,7 +123,7 @@ background-color:
 .faq4 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq4 p {
@@ -136,7 +137,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -151,7 +152,7 @@ background-color:
 .faq5 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq5 p {
@@ -165,7 +166,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -180,7 +181,7 @@ background-color:
 .faq6 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq6 p {
@@ -194,7 +195,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -209,7 +210,7 @@ background-color:
 .faq7 summary {
   color: rgb(0, 0, 0);
   margin-left: 150px;
-
+  display: flex;
 }
 
 .faq7 p {
@@ -223,7 +224,7 @@ background-color:
   background-color: #d1d1d185;
   display: flex;
   background-size: cover;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 10px;
   margin-left: 50px;
   margin-right: 50px;
@@ -248,7 +249,7 @@ details summary {
 
 /* Alexandre */
 
-.segundo-container {
+ .segundo-container {
 width: 100vw;
 height: 200px;
 display: flex;

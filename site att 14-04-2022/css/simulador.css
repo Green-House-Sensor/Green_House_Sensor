@@ -1,6 +1,6 @@
 .simulador{
     width: 100vw;
-   height: 100vh;
+   height: 120vh;
    background-color: #f2f2f285;
    display: flex;
    justify-content: center;
@@ -68,3 +68,35 @@
 input.placeholderred::-webkit-input-placeholder{
    color: red;
 }
+
+.containersimulador1 {
+   background-color: white;
+   height: 400px;
+   width: 600px;
+   margin-top: 25px;
+}
+.icons {
+   padding: 50px;
+}
+
+.icons div {
+   margin-left: 10px;
+   font-weight: 600;
+}
+.icon2 {
+   background-color: white;
+   height: 110px;
+   padding: 10px;
+   border-radius: 12px;
+   box-shadow: 0px 10px 25px #00000056; 
+}
+.icon1 {
+   background-color: white;
+   height: 110px;
+   margin-top: 40px;
+   padding: 10px;
+   border-radius: 12px;
+   box-shadow: 0px 10px 25px #00000056;
+   padding-bottom: 25px;
+}
+/* #3ff95e87 */

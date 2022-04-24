@@ -6,7 +6,6 @@
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    background-color: white;
 }
 
 .container {
@@ -73,7 +72,83 @@ border-right: none;
 .cadastroheader a:hover {
     border: none;
     
-
-
 }
+
+/* RODAPÉ */
+.containerfooter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .redes {
+    margin-right: 25px;
+  }
+  .links {
+    margin-left: 25px;
+  }
+  .btnfooter {
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin-top: 115px;
+    margin-left: 10px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    background-color: #1f2022;
+    padding: 4px;
+    transition: all 0.3s;
+    color: #999;
+  
+  }
+  .btnfooter b {
+  padding-left: 12px;
+  }
+  
+  .btnfooter:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #999
+  }
+  footer {
+    margin: 0;
+    width: 100vw;
+    /* background-image: url(backgroundfooter.png); */
+    background-color: #292c2f;
+    color: #999;
+    border-top: #000000;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none; 
+  }
+    textarea {
+      width: 400px;
+      height: 150px;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      background-color: #1f2022;
+      font-size: 16px;
+      resize: none;
+      padding: 4px;
+      color: white;
+      
+    }
+    input {
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      background-color: #1f2022;
+      padding: 4px;
+      color: white;
+    }
+    a :hover {
+    transform: scale(1.1);
+    }
+
+    html{
+      scroll-behavior: smooth;
+  }
 

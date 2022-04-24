@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     font-size: 36px;
-    width: 1000px;
+    width: 100%;
     margin-left: 200px;
 }
 .banner span{
@@ -35,17 +35,17 @@
 
 /*Sobre nós*/
 
- .divPaiDeTodos{
-     padding: 10px;
-    background-color: #32cd4c;
+ .cabeçalho{
+    padding: 10px;
+    background-image: url(buried-1920x1080.png);
     height: 100px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.divText{
+.titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 36px;
     text-align: left;
@@ -55,27 +55,53 @@
        
 }
 
-.divText2{
+/* .divText2{
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     
-} 
+}  */
 
-.div1{
+.cards{
     background-color: #ffffff;
-    height: 90vh;
-    width: 100vw;
+    height: 75vh;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 20px;
-
+    /* margin-top: 10px; */
+    transition: all 0.3s;
 }
 
-.divF1{
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px #00000056;
+    padding: 0px 10px 0px 10px;
+    border-style: solid;
+    border-color: #32cd4c;
+    border-width: 2px;
+    transition: all 0.3s;
+    
+}
+
+.title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #32cd4c;;
+}
+
+
+/* .divF2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     background-color: white;
@@ -93,25 +119,7 @@
 }
 
 
-.divF2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    background-color: white;
-    height: 400px;
-    width: 300px;
-    text-align: justify;
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px #00000056;
-    padding: 0px 10px 0px 10px;
-    border-style: solid;
-    border-color: #32cd4c;
-    border-width: 2px;
-    transition: all 0.3s;
-    
-}
-
-
-.divF3{
+/* /* .divF3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     background-color: white;
@@ -122,21 +130,22 @@
     box-shadow: 0px 10px 30px #00000056;
     padding: 0px 10px 0px 10px;
     transition: all 0.3s;
+     */
     
-    
-}
-.divF3:hover {
+
+.texto:hover {
     box-shadow: 0px 6px 10px #32cd4c;
     transform: scale(1.08);
 }
-.divF2:hover {
+
+/* .divF2:hover {
     box-shadow: 0px 6px 10px #32cd4c;
     transform: scale(1.08);
 }
 .divF1:hover {
     box-shadow: 0px 6px 10px #32cd4c;
     transform: scale(1.08);
-}
+} */
 
 .divTitulo{
     color: #32cd4c;
@@ -145,25 +154,28 @@
     text-align: center;
 }
 
-
-/* .divPai{
-    background-image: url(https://agropos.com.br/wp-content/uploads/2021/04/Vantagens-da-utilizacao-de-estufas-na-agricultura-min.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.tituloTeam{
     display: flex;
- }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    color: #000000;
+    font-weight: 900;
+    width: 300px;
+    height: 100px;
+    margin-left: 40%;
 
- .divText{
-     filter: brightness(100%);
-     color: #ffffff;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: 40px;
-     font-weight: 800;
-     justify-content: center;
-   
-    
- }
-*/
+}
+
+.fotoTeam{
+    display: flex;
+    height: 550px;
+    width: 1600px auto;
+    background-image: url(Foto_Grupo1.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
