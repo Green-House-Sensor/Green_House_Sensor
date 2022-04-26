@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green House | Dashboard</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <script src="../js/funcoes.js"></script>
+    <link rel="stylesheet" href="styledash.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/4ea0191552.js" crossorigin="anonymous"></script>
+
+<body onload="validarSessao(), atualizarFeed()">
+    <div class="container">
+
+        <!-- COMEÇO ESQUERDA  -->
+
+        <aside>
+            <div class="right">
+                <div class="profile">
+                    <div class="info">
+                        <div class="imagem-profile">
+                            <i class="fa-solid fa-circle-user fa-6x"></i>
+                        </div>
+                        <h3>Olá,
+                            <br>
+                            <span id="b_usuario">usuário</span>!
+                        </h3>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div><br>
+            </div>
+            <div class="sidebar">
+                <a>
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                    <a>
+                        <a class="btn-logout" onclick="limparSessao()">
+                            <span class="material-icons-sharp">logout</span>
+                            <h3>Logout</h3>
+                        </a>
+
+        </aside>
+        <!-- FIM ESQUERDA  -->
+
+        <!-- COMEÇO MAIN (MEIO)  -->
+        <main>
+            <div class="header">
+
+                <h1>Dashboard</h1>
+                <div class="top">
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="date">
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="legenda-pai">
+                    <div class="legenda">
+                        <b class="text-legenda">NORMAL</b>
+                    </div>
+                    <div class="legenda1">
+                        <b class="text-legenda1">ATENÇÃO</b>
+                    </div>
+                    <div class="legenda2">
+                        <b class="text-legenda2">PERIGO</b>
+                    </div>
+                </div>
+            </div>
+            <div class="kpi-pai">
+                <div class="kpi">
+                    <b style="font-size: 14px" class="tit-kpi">Sensores Ativos</b>
+                    <span class="material-icons-sharp">sensors</span>
+                    <div class="text-kpi">
+                        94/100
+                    </div>
+                </div>
+                <div class="kpi1">
+                    <b style="font-size: 14px" class="tit-kpi1">Umidade</b>
+                    <span class="material-icons-sharp">water_drop</span>
+                    <div class="text-kpi1">
+                        38%
+                    </div>
+                </div>
+                <div class="kpi2">
+                    <b style="font-size: 14px" class="tit-kpi2">Temperatura</b><span
+                        class="material-icons-sharp">thermostat</span>
+                    <div class="text-kpi2">
+                        25.6°C
+                    </div>
+                </div>
+                <div class="kpi3">
+                    <b style="font-size: 14px" class="tit-kpi3">Luminosidade</b><span
+                        class="material-icons-sharp">flash_on</span>
+                    <div class="text-kpi3">
+                        120<b style="font-size: 11px"> lúmens por m²</b>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="grafico">
+                <div class="grafico1">
+                    <div class="insights">
+                        <div class="sales1">
+                            <span class="material-icons-sharp">show_chart</span><b class="tit-chart">Umidade</b><br>
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insights1">
+                        <div class="sales1">
+                            <span class="material-icons-sharp">poll</span><b class="tit-chart">Temperatura</b><br>
+                            <div>
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grafico2">
+                    <div class="insights2">
+                        <div class="sales">
+                            <span class="material-icons-sharp">donut_large</span><b
+                                class="tit-chart1">Luminosidade</b><br>
+                            <div>
+                                <canvas id="myChart3"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-order">
+                <h2>Dados Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="numero">Número Sensor</th>
+                            <th id="localizacao">Localização Sensor</th>
+                            <th id="status">Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>Bloco 8D</td>
+                            <td class="warning">Instável</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Bloco 8D</td>
+                            <td class="primary">Estável</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Bloco 8D</td>
+                            <td class="warning">Instável</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Bloco 8D</td>
+                            <td class="primary">Estável</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Bloco 8D</td>
+                            <td class="warning">Instável</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- FIM MAIN (MEIO)  -->
+
+        <script src="index.js"></script>
+</body>
+
+</html>
+
+<script>
+    /*Gráfico de linhas*/
+    const labels = [
+        'Estufa 1',
+        'Estufa 2',
+        'Estufa 3',
+        'Estufa 4',
+        'Estufa 5',
+        'Estufa 6',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [
+            {
+                label: 'Umidade',
+                backgroundColor: '#5ecd32',
+                borderColor: '#5ecd32',
+                data: [31, 55, 38, 48, 50],
+            }
+        ]
+    };
+
+    /*Gráfico de Barras*/
+    const labels2 = [
+        'Estufa 1',
+        'Estufa 2',
+        'Estufa 3',
+        'Estufa 4',
+        'Estufa 5',
+        'Estufa 6',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: ['Ideal', 'Alerta', 'Crítico'],
+            backgroundColor: ['#12f568',
+            '#eb4c3e',
+            '#f0cb27',
+            '#eb4c3e',
+            '#f0cb27',
+            '#12f568'],
+            borderColor: '',
+            data: [17, 8, 12, 22, 20, 18],
+        },
+        ]
+    }
+
+    const labels3 = [
+        'Acima',
+        'Ideal',
+        'Abaixo'
+    ];
+
+    const data3 = {
+        labels: labels3,
+        datasets: [{
+            label: 'Luminosidade',
+            backgroundColor: ['#eb4c3e',
+                '#5ecd32',
+                '#ffbb55'],
+            borderColor: 'transparent',
+            data: [20, 150, 10],
+        },
+        ]
+    };
+
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+
+    const config3 = {
+        type: 'doughnut',
+        data: data3,
+        options: {}
+    };
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+
+    const myChart3 = new Chart(
+        document.getElementById('myChart3'),
+        config3
+    );
+</script>
